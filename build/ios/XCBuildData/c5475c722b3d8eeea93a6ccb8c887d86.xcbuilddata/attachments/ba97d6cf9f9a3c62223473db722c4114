@@ -1,0 +1,38 @@
+{
+  "" : {
+    "diagnostics" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iosNewsApp-master.dia",
+    "emit-module-dependencies" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iosNewsApp-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iosNewsApp-master-emit-module.dia",
+    "swift-dependencies" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iosNewsApp-master.swiftdeps"
+  },
+  "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/fauzangm/AndroidStudioProjects/belajarkmp/iosNewsApp/iosNewsApp/ContentView.swift" : {
+    "const-values" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/fauzangm/AndroidStudioProjects/belajarkmp/iosNewsApp/iosNewsApp/iOSApp.swift" : {
+    "const-values" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iOSApp.swiftconstvalues",
+    "dependencies" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iOSApp.d",
+    "diagnostics" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iOSApp.dia",
+    "index-unit-output-path" : "/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iOSApp.o",
+    "llvm-bc" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iOSApp.bc",
+    "object" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iOSApp.o",
+    "swift-dependencies" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iOSApp.swiftdeps",
+    "swiftmodule" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios/iosNewsApp.build/Debug-iphonesimulator/iosNewsApp.build/Objects-normal/arm64/iOSApp~partial.swiftmodule"
+  }
+}

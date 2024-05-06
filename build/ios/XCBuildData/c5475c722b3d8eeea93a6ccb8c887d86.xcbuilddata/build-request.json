@@ -1,0 +1,70 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildOnly"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "f62768dbcf284991b26d3318d56cb26758e8d963a07eeba4ac05a175c12568b7"
+    }
+  ],
+  "containerPath" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/iosNewsApp/iosNewsApp.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator17.2",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/fauzangm/Library/Developer/Xcode/DerivedData/iosNewsApp-hgqdbunjmghcgvgpxldtmplednba/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/fauzangm/Library/Developer/Xcode/DerivedData/iosNewsApp-hgqdbunjmghcgvgpxldtmplednba/Build/Products",
+      "derivedDataPath" : "/Users/fauzangm/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/fauzangm/Library/Developer/Xcode/DerivedData/iosNewsApp-hgqdbunjmghcgvgpxldtmplednba/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/fauzangm/Library/Developer/Xcode/DerivedData/iosNewsApp-hgqdbunjmghcgvgpxldtmplednba/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/fauzangm/Library/Developer/Xcode/DerivedData/iosNewsApp-hgqdbunjmghcgvgpxldtmplednba/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "OBJROOT" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios",
+          "SYMROOT" : "/Users/fauzangm/AndroidStudioProjects/belajarkmp/build/ios"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "build",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_MODEL" : "iPhone15,4",
+          "ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION" : "17.2",
+          "ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION" : "iPhone15,4",
+          "BUILD_ACTIVE_RESOURCES_ONLY" : "YES",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_XOJIT_PREVIEWS" : "NO",
+          "TARGET_DEVICE_IDENTIFIER" : "A5D03026-0224-4E5A-8A55-CD18E6ED8281",
+          "TARGET_DEVICE_MODEL" : "iPhone15,4",
+          "TARGET_DEVICE_OS_VERSION" : "17.2",
+          "TARGET_DEVICE_PLATFORM_NAME" : "iphonesimulator"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}
