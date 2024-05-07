@@ -6,8 +6,6 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@protocol SharedPlatform;
-
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunknown-warning-option"
@@ -143,31 +141,15 @@ __attribute__((swift_name("KotlinBoolean")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Greeting")))
-@interface SharedGreeting : SharedBase
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-- (NSString *)greet __attribute__((swift_name("greet()")));
-@end
-
 __attribute__((swift_name("Platform")))
-@protocol SharedPlatform
-@required
-@property (readonly) NSString *name __attribute__((swift_name("name")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("IOSPlatform")))
-@interface SharedIOSPlatform : SharedBase <SharedPlatform>
+@interface SharedPlatform : SharedBase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-@property (readonly) NSString *name __attribute__((swift_name("name")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Platform_iosKt")))
-@interface SharedPlatform_iosKt : SharedBase
-+ (id<SharedPlatform>)getPlatform __attribute__((swift_name("getPlatform()")));
+- (void)logSystemInfo __attribute__((swift_name("logSystemInfo()")));
+@property (readonly) int32_t density __attribute__((swift_name("density")));
+@property (readonly) NSString *deviceModel __attribute__((swift_name("deviceModel")));
+@property (readonly) NSString *osName __attribute__((swift_name("osName")));
+@property (readonly) NSString *osVersion __attribute__((swift_name("osVersion")));
 @end
 
 #pragma pop_macro("_Nullable_result")
