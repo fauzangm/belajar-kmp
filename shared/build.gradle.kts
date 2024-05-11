@@ -20,25 +20,28 @@ kotlin {
         it.binaries.framework {
             baseName = "shared"
             isStatic = true
+
+            export(libs.mvvm.core)
+            export(libs.mvvm.flow)
         }
     }
 
     sourceSets {
-        commonMain {
-            dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1-Beta")
-            }
-        }
-        commonTest.dependencies {
-            implementation(libs.kotlin.test)
+        commonMain.dependencies {
+            // put your Multiplatform dependencies here
+            implementation(libs.mvvm.core)
+            implementation(libs.mvvm.flow)
         }
 
         androidMain.dependencies {
-            implementation(libs.androidx.lifecycle.viewmodel.ktx)
+            api(libs.mvvm.core)
+            api(libs.mvvm.flow)
+            api(libs.mvvm.flow.compose)
         }
 
         iosMain.dependencies {
-
+            api(libs.mvvm.core)
+            api(libs.mvvm.flow)
         }
     }
 }

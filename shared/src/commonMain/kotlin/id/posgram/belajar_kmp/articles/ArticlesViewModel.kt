@@ -1,29 +1,28 @@
 package id.posgram.belajar_kmp.articles
 
-import id.posgram.belajar_kmp.BaseViewModel
+import dev.icerock.moko.mvvm.flow.cStateFlow
+import dev.icerock.moko.mvvm.viewmodel.ViewModel
 import id.posgram.belajar_kmp.articles.model.Article
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-class ArticlesViewModel : BaseViewModel() {
+class ArticlesViewModel : ViewModel() {
 
     private val _articlesState: MutableStateFlow<ArticlesState> =
         MutableStateFlow(ArticlesState(loading = true))
-    val articlesState: StateFlow<ArticlesState> get() = _articlesState
+    val articlesState = _articlesState.asStateFlow().cStateFlow()
 
-    init {
-        getArticles()
-    }
 
-    private fun getArticles() {
-        scope.launch {
+    fun getArticles() {
+        viewModelScope.launch {
+            _articlesState.emit(ArticlesState(loading = true))
             delay(1500)
             _articlesState.emit(ArticlesState(error = "Something went Wrong"))
+            _articlesState.emit(ArticlesState(loading = false))
             delay(1500)
-            val fetchedArticles = fetchArticle()
-            _articlesState.emit(ArticlesState(articles = fetchedArticles))
+            _articlesState.emit(ArticlesState(articles = fetchArticle()))
         }
     }
 
