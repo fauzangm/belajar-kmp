@@ -15,6 +15,9 @@ class ArticlesViewModel : ViewModel() {
     val articlesState = _articlesState.asStateFlow().cStateFlow()
 
 
+    init {
+        getArticles()
+    }
     fun getArticles() {
         viewModelScope.launch {
             _articlesState.emit(ArticlesState(loading = true))

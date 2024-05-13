@@ -37,7 +37,6 @@ struct ArticlesScreen: View {
             }
         }
         .onAppear {
-            viewModel.getArticles()
             viewModel.articlesState.subscribe{ state in
                 if((state?.loading) != nil){
                     isLoading = state?.loading ?? false
