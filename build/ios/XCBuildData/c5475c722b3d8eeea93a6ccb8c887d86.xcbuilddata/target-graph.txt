@@ -1,2 +1,0 @@
-Target dependency graph (1 target)
-Target 'iosNewsApp' in project 'iosNewsApp' (no dependencies)
