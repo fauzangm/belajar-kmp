@@ -40,10 +40,10 @@ fun GreetingView(text: String) {
     Text(text = text)
 }
 
-@Preview
-@Composable
-fun DefaultPreview() {
-    MyApplicationTheme {
-        AboutScreen()
-    }
-}
+//@Preview
+//@Composable
+//fun DefaultPreview() {
+//    MyApplicationTheme {
+//        AboutScreen()
+//    }
+//}

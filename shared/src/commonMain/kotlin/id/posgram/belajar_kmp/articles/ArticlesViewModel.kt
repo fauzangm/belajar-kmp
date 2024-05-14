@@ -22,8 +22,8 @@ class ArticlesViewModel : ViewModel() {
         viewModelScope.launch {
             _articlesState.emit(ArticlesState(loading = true))
             delay(1500)
-            _articlesState.emit(ArticlesState(error = "Something went Wrong"))
             _articlesState.emit(ArticlesState(loading = false))
+            _articlesState.emit(ArticlesState(error = "Something went Wrong"))
             delay(1500)
             _articlesState.emit(ArticlesState(articles = fetchArticle()))
         }

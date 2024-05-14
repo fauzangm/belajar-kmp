@@ -10,10 +10,14 @@ kotlinxCoroutinesCore = "1.7.3"
 kotlinxCoroutinesCoreVersion = "1.8.1-Beta"
 lifecycleViewmodelKtx = "2.7.0"
 mvvmCore = "0.16.1"
+icons = "1.5.1"
+navigationCompose = "2.7.7"
+
 
 
 [libraries]
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
 jetbrains-kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinxCoroutinesCoreVersion" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -27,6 +31,7 @@ kotlinx-coroutines-core = { module = "org.jetbrains.kotlin:kotlinx-coroutines-co
 mvvm-core = { module = "dev.icerock.moko:mvvm-core", version.ref = "mvvmCore" }
 mvvm-flow = { module = "dev.icerock.moko:mvvm-flow", version.ref = "mvvmCore" }
 mvvm-flow-compose = { module = "dev.icerock.moko:mvvm-flow-compose", version.ref = "mvvmCore" }
+compose-material ={module = "androidx.compose.material:material-icons-extended",version.ref = "icons"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

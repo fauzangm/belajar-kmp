@@ -40,11 +40,9 @@ struct ArticlesScreen: View {
             viewModel.articlesState.subscribe{ state in
                 if((state?.loading) != nil){
                     isLoading = state?.loading ?? false
-                    print("loading state \(state?.loading)")
                 }
                 if(((state?.error?.isEmpty) != nil)) {
                     isError = true
-                    print("error message \(state?.error)")
                 }
                 if(!(state?.articles.isEmpty ?? false)){
                     isSucces = true
