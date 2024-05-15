@@ -48,4 +48,6 @@ dependencies {
     debugImplementation(libs.compose.ui.tooling)
     implementation(libs.compose.material)
     implementation(libs.androidx.navigation.compose)
+    //Accompanist
+    implementation(libs.accompanist.systemuicontroller)
 }
