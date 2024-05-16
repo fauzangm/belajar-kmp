@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
+    id("co.touchlab.skie") version "0.4.19"
+    kotlin("plugin.serialization") version "1.9.20"
 }
 
 kotlin {
@@ -31,17 +33,23 @@ kotlin {
             // put your Multiplatform dependencies here
             implementation(libs.mvvm.core)
             implementation(libs.mvvm.flow)
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.serialization.kotlinx.json)
+
         }
 
         androidMain.dependencies {
             api(libs.mvvm.core)
             api(libs.mvvm.flow)
             api(libs.mvvm.flow.compose)
+            implementation(libs.ktor.client.okhttp)
         }
 
         iosMain.dependencies {
             api(libs.mvvm.core)
             api(libs.mvvm.flow)
+            implementation(libs.ktor.client.darwin)
         }
     }
 }

@@ -36,7 +36,7 @@ import kotlinx.coroutines.launch
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        val articlesViewModel: ArticlesViewModel by viewModels()
         Platform().logSystemInfo()
         setContent {
             MyApplicationTheme {
@@ -63,7 +63,6 @@ class MainActivity : ComponentActivity() {
                     ) {
 
                         composable(route = Route.ArticleScreen.route) {
-                            val articlesViewModel: ArticlesViewModel by viewModels()
                             ArticlesScreen(onAboutButtonClick = {
                                 navigateToAboutScreen(
                                     navController
