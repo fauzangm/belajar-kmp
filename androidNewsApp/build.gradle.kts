@@ -50,4 +50,7 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
     //Accompanist
     implementation(libs.accompanist.systemuicontroller)
+
+    implementation(libs.koin.android)
+    implementation(libs.koin.androidx.compose)
 }

@@ -1,7 +1,6 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
-    id("co.touchlab.skie") version "0.4.19"
     kotlin("plugin.serialization") version "1.9.20"
 }
 
@@ -36,6 +35,8 @@ kotlin {
             implementation(libs.ktor.client.core)
             implementation(libs.ktor.client.content.negotiation)
             implementation(libs.ktor.serialization.kotlinx.json)
+            implementation(libs.kotlinx.datetime)
+            implementation(libs.koin.core)
 
         }
 
@@ -50,6 +51,12 @@ kotlin {
             api(libs.mvvm.core)
             api(libs.mvvm.flow)
             implementation(libs.ktor.client.darwin)
+        }
+
+        val commonTest by getting {
+            dependencies {
+                implementation(libs.kotlin.test)
+            }
         }
     }
 }

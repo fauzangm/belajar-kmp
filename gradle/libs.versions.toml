@@ -1,20 +1,22 @@
 [versions]
-accompanistSystemuicontroller = "0.31.4-beta"
+accompanistSystemuicontroller = "0.34.0"
 agp = "8.4.0"
-coilCompose = "2.4.0"
+coilCompose = "2.6.0"
+jodaTime = "2.10.10"
 kotlin = "1.9.20"
-compose = "1.5.4"
+compose = "1.6.7"
 compose-compiler = "1.5.4"
-compose-material3 = "1.1.2"
-androidx-activityCompose = "1.8.0"
+compose-material3 = "1.2.1"
+androidx-activityCompose = "1.9.0"
 kotlinxCoroutinesCore = "1.7.3"
 kotlinxCoroutinesCoreVersion = "1.8.1-Beta"
 lifecycleViewmodelKtx = "2.7.0"
 mvvmCore = "0.16.1"
-icons = "1.5.1"
+icons = "1.6.7"
 navigationCompose = "2.7.7"
 ktorClient = "2.3.5"
-kotlinxDatetime = "0.4.1"
+kotlinxDatetime = "0.5.0"
+koin = "3.4.3"
 
 [libraries]
 accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanistSystemuicontroller" }
@@ -43,6 +45,10 @@ ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "k
 ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktorClient" }
 
 kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinxDatetime" }
+
+koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
