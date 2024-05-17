@@ -36,7 +36,6 @@ import kotlinx.coroutines.launch
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val articlesViewModel: ArticlesViewModel by viewModels()
         Platform().logSystemInfo()
         setContent {
             MyApplicationTheme {
@@ -67,7 +66,7 @@ class MainActivity : ComponentActivity() {
                                 navigateToAboutScreen(
                                     navController
                                 )
-                            }, articlesViewModel = articlesViewModel)
+                            })
                         }
 
                         composable(route = Route.AboutScreen.route) {
@@ -87,15 +86,3 @@ private fun navigateToAboutScreen(navController: NavController) {
 
 }
 
-@Composable
-fun GreetingView(text: String) {
-    Text(text = text)
-}
-
-//@Preview
-//@Composable
-//fun DefaultPreview() {
-//    MyApplicationTheme {
-//        AboutScreen()
-//    }
-//}

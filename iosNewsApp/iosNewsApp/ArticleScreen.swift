@@ -12,7 +12,11 @@ import Foundation
 
 struct ArticlesScreen: View {
     
-    @ObservedObject var viewModel: ArticlesViewModel = ArticlesViewModel()
+    let viewModel: ArticlesViewModel
+    
+    init(){
+        viewModel = ArticlesInjector().articlesViewModel
+    }
     
     @State private var showAlert: Bool = false
     @State private var isLoading : Bool = false
