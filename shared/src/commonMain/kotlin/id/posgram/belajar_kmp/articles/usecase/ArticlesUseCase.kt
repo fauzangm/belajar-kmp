@@ -2,6 +2,7 @@ package id.posgram.belajar_kmp.articles.usecase
 
 import id.posgram.belajar_kmp.articles.model.Article
 import id.posgram.belajar_kmp.articles.model.ArticleRaw
+import id.posgram.belajar_kmp.articles.repository.ArticleRepository
 import id.posgram.belajar_kmp.articles.service.ArticleService
 import kotlinx.datetime.Clock
 import kotlinx.datetime.Instant
@@ -12,10 +13,10 @@ import kotlinx.datetime.todayIn
 import kotlinx.datetime.TimeZone.Companion.currentSystemDefault
 import kotlin.math.abs
 
-class ArticlesUseCase(private val service: ArticleService) {
+class ArticlesUseCase(private val repo: ArticleRepository) {
 
     suspend fun getArticles(): List<Article> {
-        val articleRaw = service.fetchArticles()
+        val articleRaw = repo.getArticles()
         return mapArticles(articleRaw)
     }
 

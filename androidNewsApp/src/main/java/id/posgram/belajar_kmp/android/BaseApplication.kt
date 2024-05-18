@@ -1,6 +1,7 @@
 package id.posgram.belajar_kmp.android
 
 import android.app.Application
+import id.posgram.belajar_kmp.android.di.databaseModuel
 import id.posgram.belajar_kmp.android.di.viewModelsModule
 import id.posgram.belajar_kmp.di.applicationModule
 import org.koin.android.ext.koin.androidContext
@@ -15,7 +16,7 @@ class BaseApplication: Application() {
 
 
     private fun initKoin() {
-        val modules = applicationModule + viewModelsModule
+        val modules = applicationModule + viewModelsModule + databaseModuel
 
         startKoin {
             androidContext(this@BaseApplication)
