@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
     kotlin("plugin.serialization") version "1.9.20"
+    alias(libs.plugins.sqlDelight)
 }
 
 kotlin {
@@ -37,6 +38,8 @@ kotlin {
             implementation(libs.ktor.serialization.kotlinx.json)
             implementation(libs.kotlinx.datetime)
             implementation(libs.koin.core)
+            // Sql
+            implementation(libs.sql.coroutines.extensions)
 
         }
 
@@ -45,12 +48,16 @@ kotlin {
             api(libs.mvvm.flow)
             api(libs.mvvm.flow.compose)
             implementation(libs.ktor.client.okhttp)
+            //sql
+            implementation(libs.sql.android.driver)
         }
 
         iosMain.dependencies {
             api(libs.mvvm.core)
             api(libs.mvvm.flow)
             implementation(libs.ktor.client.darwin)
+            //sql
+            implementation(libs.sql.native.driver)
         }
 
         val commonTest by getting {
@@ -70,5 +77,13 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+}
+
+sqldelight{
+    databases{
+        create(name = "ArticleDB"){
+            packageName.set("posgram.belajar_kmp.db")
+        }
     }
 }
