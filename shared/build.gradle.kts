@@ -21,7 +21,6 @@ kotlin {
     ).forEach {
         it.binaries.framework {
             baseName = "shared"
-            isStatic = true
 
             export(libs.mvvm.core)
             export(libs.mvvm.flow)
