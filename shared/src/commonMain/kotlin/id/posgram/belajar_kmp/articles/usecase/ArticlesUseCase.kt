@@ -15,8 +15,8 @@ import kotlin.math.abs
 
 class ArticlesUseCase(private val repo: ArticleRepository) {
 
-    suspend fun getArticles(): List<Article> {
-        val articleRaw = repo.getArticles()
+    suspend fun getArticles(fetch : Boolean): List<Article> {
+        val articleRaw = repo.getArticles(fetch = fetch)
         return mapArticles(articleRaw)
     }
 

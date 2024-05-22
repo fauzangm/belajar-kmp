@@ -40,6 +40,9 @@ struct ArticlesScreen: View {
                 }
             }
         }
+        .refreshable {
+            viewModel.getArticles(fetch: true)
+        }
         .onAppear {
             viewModel.articlesState.subscribe{ state in
                 if((state?.loading) != nil){

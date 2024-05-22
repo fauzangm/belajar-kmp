@@ -21,13 +21,21 @@ class ArticlesViewModel(
     private val _articlesState: MutableStateFlow<ArticlesState> =
         MutableStateFlow(ArticlesState(loading = true))
     val articlesState = _articlesState.asStateFlow().cStateFlow()
+
     init {
         getArticles()
     }
 
-    fun getArticles() {
+    fun getArticles(fetch: Boolean = false) {
         viewModelScope.launch {
-            val fetchArticle = useCase.getArticles()
+            _articlesState.emit(
+                ArticlesState(
+                    loading = true,
+                    articles = _articlesState.value.articles
+                )
+            )
+
+            val fetchArticle = useCase.getArticles(fetch)
 
             _articlesState.emit(ArticlesState(articles = fetchArticle))
         }

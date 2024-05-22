@@ -18,8 +18,10 @@ ktorClient = "2.3.5"
 kotlinxDatetime = "0.5.0"
 koin = "3.4.3"
 sqlDelight = "2.0.0"
-
+accompanistSwiperefresh = "0.24.13-rc"
 [libraries]
+
+accompanist-swiperefresh = { module = "com.google.accompanist:accompanist-swiperefresh", version.ref = "accompanistSwiperefresh" }
 accompanist-systemuicontroller = { module = "com.google.accompanist:accompanist-systemuicontroller", version.ref = "accompanistSystemuicontroller" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
