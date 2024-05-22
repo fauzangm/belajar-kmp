@@ -5,4 +5,5 @@ sealed class Route(
 ) {
     object ArticleScreen : Route(route = "articleScreen" )
     object AboutScreen : Route(route = "aboutScreen" )
+    object SourceScreen : Route(route = "sourceScreen" )
 }

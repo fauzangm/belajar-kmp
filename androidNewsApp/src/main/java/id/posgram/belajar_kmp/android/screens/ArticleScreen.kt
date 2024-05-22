@@ -12,6 +12,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.List
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -29,24 +30,24 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImage
 import com.google.accompanist.swiperefresh.SwipeRefresh
 import com.google.accompanist.swiperefresh.SwipeRefreshState
-import id.posgram.belajar_kmp.articles.ArticlesViewModel
-import id.posgram.belajar_kmp.articles.model.Article
+import id.posgram.belajar_kmp.articles.viewmodel.ArticlesViewModel
+import id.posgram.belajar_kmp.articles.data.model.Article
 import org.koin.androidx.compose.getViewModel
 
 
 @Composable
 fun ArticlesScreen(
+    onSourcesButtonClick: () -> Unit,
     onAboutButtonClick: () -> Unit,
     articlesViewModel: ArticlesViewModel = getViewModel(),
 ) {
     val articlesState = articlesViewModel.articlesState.collectAsState()
 
     Column {
-        AppBar(onAboutButtonClick)
+        AppBar(onSourcesButtonClick = onSourcesButtonClick, onAboutButtonClick = onAboutButtonClick)
 
         if (articlesState.value.loading)
             println("Loading")
@@ -60,11 +61,19 @@ fun ArticlesScreen(
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun AppBar(
+    onSourcesButtonClick: () -> Unit,
     onAboutButtonClick: () -> Unit,
 ) {
     TopAppBar(
         title = { Text(text = "Articles") },
         actions = {
+            IconButton(onClick = onSourcesButtonClick) {
+                Icon(
+                    imageVector = Icons.Outlined.List,
+                    contentDescription = "Sources Button",
+                )
+            }
+
             IconButton(onClick = onAboutButtonClick) {
                 Icon(
                     imageVector = Icons.Outlined.Info,

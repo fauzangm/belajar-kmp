@@ -1,8 +1,8 @@
-package id.posgram.belajar_kmp.articles.repository
+package id.posgram.belajar_kmp.articles.data.remote.repository
 
-import id.posgram.belajar_kmp.articles.local.ArticlesDataSource
-import id.posgram.belajar_kmp.articles.model.ArticleRaw
-import id.posgram.belajar_kmp.articles.service.ArticleService
+import id.posgram.belajar_kmp.articles.data.local.ArticlesDataSource
+import id.posgram.belajar_kmp.articles.data.model.ArticleRaw
+import id.posgram.belajar_kmp.articles.data.remote.service.ArticleService
 
 class ArticleRepository(
     private val dataSource: ArticlesDataSource,

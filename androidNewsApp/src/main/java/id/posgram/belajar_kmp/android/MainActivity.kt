@@ -3,25 +3,16 @@ package id.posgram.belajar_kmp.android
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.viewModels
 import androidx.compose.foundation.background
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavController
-import androidx.navigation.NavGraph
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -29,9 +20,8 @@ import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import id.posgram.belajar_kmp.Platform
 import id.posgram.belajar_kmp.android.screens.AboutScreen
 import id.posgram.belajar_kmp.android.screens.ArticlesScreen
+import id.posgram.belajar_kmp.android.screens.SourcesScreen
 import id.posgram.belajar_kmp.android.utils.Route
-import id.posgram.belajar_kmp.articles.ArticlesViewModel
-import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -62,15 +52,23 @@ class MainActivity : ComponentActivity() {
                     ) {
 
                         composable(route = Route.ArticleScreen.route) {
-                            ArticlesScreen(onAboutButtonClick = {
-                                navigateToAboutScreen(
-                                    navController
-                                )
-                            })
+                            ArticlesScreen(
+                                onSourcesButtonClick = {
+                                    naviateToSourcesScreen(navController)
+                                },
+                                onAboutButtonClick = {
+                                    navigateToAboutScreen(
+                                        navController
+                                    )
+                                })
                         }
 
                         composable(route = Route.AboutScreen.route) {
                             AboutScreen(navigateUp = { navController.navigateUp() })
+                        }
+
+                        composable(route = Route.SourceScreen.route) {
+                            SourcesScreen(navigateUp = { navController.navigateUp() })
                         }
                     }
                 }
@@ -84,5 +82,11 @@ private fun navigateToAboutScreen(navController: NavController) {
         route = Route.AboutScreen.route
     )
 
+}
+
+private fun naviateToSourcesScreen(navController: NavController) {
+    navController.navigate(
+        route = Route.SourceScreen.route
+    )
 }
 

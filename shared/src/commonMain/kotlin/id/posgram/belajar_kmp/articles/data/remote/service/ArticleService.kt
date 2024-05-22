@@ -1,7 +1,7 @@
-package id.posgram.belajar_kmp.articles.service
+package id.posgram.belajar_kmp.articles.data.remote.service
 
-import id.posgram.belajar_kmp.articles.model.ArticleRaw
-import id.posgram.belajar_kmp.articles.model.ArticlesResponse
+import id.posgram.belajar_kmp.articles.data.model.ArticleRaw
+import id.posgram.belajar_kmp.articles.data.model.ArticlesResponse
 import io.ktor.client.HttpClient
 import io.ktor.client.call.body
 import io.ktor.client.request.get

@@ -1,9 +1,8 @@
 package id.posgram.belajar_kmp.articles.usecase
 
-import id.posgram.belajar_kmp.articles.model.Article
-import id.posgram.belajar_kmp.articles.model.ArticleRaw
-import id.posgram.belajar_kmp.articles.repository.ArticleRepository
-import id.posgram.belajar_kmp.articles.service.ArticleService
+import id.posgram.belajar_kmp.articles.data.model.Article
+import id.posgram.belajar_kmp.articles.data.model.ArticleRaw
+import id.posgram.belajar_kmp.articles.data.remote.repository.ArticleRepository
 import kotlinx.datetime.Clock
 import kotlinx.datetime.Instant
 import kotlinx.datetime.TimeZone

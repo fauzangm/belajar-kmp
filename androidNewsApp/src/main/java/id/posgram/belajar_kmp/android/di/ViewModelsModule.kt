@@ -1,7 +1,7 @@
 package id.posgram.belajar_kmp.android.di
 
 import app.cash.sqldelight.db.SqlDriver
-import id.posgram.belajar_kmp.articles.ArticlesViewModel
+import id.posgram.belajar_kmp.articles.viewmodel.ArticlesViewModel
 import id.posgram.belajar_kmp.db.DatabaseDriverFactory
 import org.koin.android.ext.koin.androidContext
 import org.koin.androidx.viewmodel.dsl.viewModel

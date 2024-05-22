@@ -1,4 +1,4 @@
-package id.posgram.belajar_kmp.articles.model
+package id.posgram.belajar_kmp.articles.data.model
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable

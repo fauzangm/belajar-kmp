@@ -1,6 +1,7 @@
 package id.posgram.belajar_kmp.di
 
-import id.posgram.belajar_kmp.articles.ArticlesViewModel
+import id.posgram.belajar_kmp.articles.viewmodel.ArticlesViewModel
+import id.posgram.belajar_kmp.articles.viewmodel.SourcesViewModel
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 import org.koin.core.context.startKoin
@@ -17,4 +18,9 @@ fun initKoin() {
 class ArticlesInjector : KoinComponent {
 
     val articlesViewModel: ArticlesViewModel by inject()
+}
+
+class SourcesInjector : KoinComponent {
+
+    val sourcesViewModel: SourcesViewModel by inject()
 }

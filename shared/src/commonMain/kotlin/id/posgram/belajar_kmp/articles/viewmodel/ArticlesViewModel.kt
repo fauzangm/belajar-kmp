@@ -1,18 +1,11 @@
-package id.posgram.belajar_kmp.articles
+package id.posgram.belajar_kmp.articles.viewmodel
 
 import dev.icerock.moko.mvvm.flow.cStateFlow
 import dev.icerock.moko.mvvm.viewmodel.ViewModel
-import id.posgram.belajar_kmp.articles.model.Article
-import id.posgram.belajar_kmp.articles.service.ArticleService
 import id.posgram.belajar_kmp.articles.usecase.ArticlesUseCase
-import io.ktor.client.HttpClient
-import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
-import io.ktor.serialization.kotlinx.json.json
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
-import kotlinx.serialization.json.Json
 
 class ArticlesViewModel(
     private val useCase: ArticlesUseCase

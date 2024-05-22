@@ -1,6 +1,6 @@
-package id.posgram.belajar_kmp.articles
+package id.posgram.belajar_kmp.articles.viewmodel
 
-import id.posgram.belajar_kmp.articles.model.Article
+import id.posgram.belajar_kmp.articles.data.model.Article
 
 data class ArticlesState (
     val articles: List<Article> = listOf(),

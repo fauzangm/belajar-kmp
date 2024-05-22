@@ -1,6 +1,6 @@
-package id.posgram.belajar_kmp.articles.local
+package id.posgram.belajar_kmp.articles.data.local
 
-import id.posgram.belajar_kmp.articles.model.ArticleRaw
+import id.posgram.belajar_kmp.articles.data.model.ArticleRaw
 import posgram.belajar_kmp.db.ArticleDB
 
 
